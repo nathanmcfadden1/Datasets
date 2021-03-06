@@ -31,7 +31,7 @@
   
     // Linking to and loading a kml layer 
         var toLibraries = new google.maps.KmlLayer({
-          url: 'https://raw.githubusercontent.com/nathanmcfadden1/Datasets/main/SWP_HighlyVulnerableAquifer_Guelph.kml?token=ATBE2E5XRYUGXUURCLISBFTAIPHCK',
+          url: 'https://raw.githubusercontent.com/nathanmcfadden1/Datasets/main/SWP_HighlyVulnerableAquifer_Guelph.kml?token=ATBE2E4QYNO3EZILEA4BVXLAIPI3W',
           map: map
         });
       }
