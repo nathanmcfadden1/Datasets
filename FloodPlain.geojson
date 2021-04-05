@@ -1,0 +1,623 @@
+{
+ "currentVersion": 10.71,
+ "id": 25,
+ "name": "Floodplain (GRCA)",
+ "type": "Feature Layer",
+ "description": "Metadata: https://maps.grandriver.ca/metadata/?ID=2394",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 26917,
+  "latestWkid": 26917
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 250000,
+ "maxScale": 0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "FL_TYPE",
+   "field2": null,
+   "field3": null,
+   "defaultSymbol": null,
+   "defaultLabel": null,
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       156,
+       158,
+       219,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        37,
+        31,
+        138,
+        255
+       ],
+       "width": 1
+      }
+     },
+     "value": "ENGINEERED",
+     "label": "Engineered",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       156,
+       158,
+       219,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        37,
+        31,
+        138,
+        255
+       ],
+       "width": 1
+      }
+     },
+     "value": "ESTIMATED",
+     "label": "Estimated",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSVertical",
+      "color": [
+       156,
+       158,
+       219,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        37,
+        31,
+        138,
+        255
+       ],
+       "width": 1
+      }
+     },
+     "value": "APPROXIMATE",
+     "label": "Approximate",
+     "description": ""
+    }
+   ],
+   "fieldDelimiter": ","
+  },
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 504486.449,
+  "ymin": 4743833.464,
+  "xmax": 621492.381,
+  "ymax": 4896156.6219999995,
+  "spatialReference": {
+   "wkid": 26917,
+   "latestWkid": 26917
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "GR_FEATURE",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "FL_FILEID",
+   "type": "esriFieldTypeString",
+   "alias": "File ID",
+   "length": 15,
+   "domain": null
+  },
+  {
+   "name": "FL_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "Type",
+   "length": 15,
+   "domain": {
+    "type": "codedValue",
+    "name": "FL_TYPE",
+    "description": "Type Of Floodplain",
+    "codedValues": [
+     {
+      "name": "Engineered",
+      "code": "ENGINEERED"
+     },
+     {
+      "name": "Estimated",
+      "code": "ESTIMATED"
+     },
+     {
+      "name": "Approximate",
+      "code": "APPROXIMATE"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDuplicate"
+   }
+  },
+  {
+   "name": "FL_STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "Status",
+   "length": 10,
+   "domain": {
+    "type": "codedValue",
+    "name": "FL_STATUS",
+    "description": "Status Of Floodplain",
+    "codedValues": [
+     {
+      "name": "Current",
+      "code": "CURRENT"
+     },
+     {
+      "name": "Pending",
+      "code": "PENDING"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDuplicate"
+   }
+  },
+  {
+   "name": "FL_REGAREA",
+   "type": "esriFieldTypeString",
+   "alias": "Reg Area",
+   "length": 20,
+   "domain": {
+    "type": "codedValue",
+    "name": "FL_REGAREA",
+    "description": "Type Of Regulated Area",
+    "codedValues": [
+     {
+      "name": "One Zone",
+      "code": "ONE ZONE"
+     },
+     {
+      "name": "Two Zone",
+      "code": "TWO ZONE"
+     },
+     {
+      "name": "Two Zone Fringe",
+      "code": "TWO ZONE FRINGE"
+     },
+     {
+      "name": "SPA",
+      "code": "SPECIAL POLICY AREA"
+     },
+     {
+      "name": "Candidate Two Zone",
+      "code": "CANDIDATE TWO ZONE"
+     },
+     {
+      "name": "Floodway",
+      "code": "FLOODWAY"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDuplicate"
+   }
+  },
+  {
+   "name": "FL_CRITERIA",
+   "type": "esriFieldTypeString",
+   "alias": "Criteria",
+   "length": 30,
+   "domain": {
+    "type": "codedValue",
+    "name": "FL_CRITERIA",
+    "description": "Criteria Used For Floodplain",
+    "codedValues": [
+     {
+      "name": "Natural Valley",
+      "code": "NATURAL VALLEY"
+     },
+     {
+      "name": "Backwater",
+      "code": "BACKWATER"
+     },
+     {
+      "name": "Major Flow",
+      "code": "MAJOR FLOW"
+     },
+     {
+      "name": "Wetland",
+      "code": "WETLAND"
+     },
+     {
+      "name": "Spill",
+      "code": "SPILL"
+     },
+     {
+      "name": "Site Inspection",
+      "code": "SITE INSPECTION"
+     },
+     {
+      "name": "15 meters",
+      "code": "15M"
+     },
+     {
+      "name": "20 meters",
+      "code": "20M"
+     },
+     {
+      "name": "30 meters",
+      "code": "30M"
+     },
+     {
+      "name": "50 meters",
+      "code": "50M"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDuplicate"
+   }
+  },
+  {
+   "name": "FL_LASTEDIT",
+   "type": "esriFieldTypeDate",
+   "alias": "Last Edit",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "FL_EDITOR",
+   "type": "esriFieldTypeString",
+   "alias": "Editor",
+   "length": 10,
+   "domain": {
+    "type": "codedValue",
+    "name": "FL_EDITOR",
+    "description": "Initials of data editor",
+    "codedValues": [
+     {
+      "name": "Gus Rungis",
+      "code": "GR"
+     },
+     {
+      "name": "John Palmer",
+      "code": "JSP"
+     },
+     {
+      "name": "Naomi Moore",
+      "code": "NM"
+     },
+     {
+      "name": "Cynthia Macdonald",
+      "code": "CM"
+     },
+     {
+      "name": "Zoe Green",
+      "code": "ZG"
+     },
+     {
+      "name": "Janet Engel",
+      "code": "JE"
+     },
+     {
+      "name": "Naglaa Ahmed",
+      "code": "NA"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDuplicate"
+   }
+  },
+  {
+   "name": "FL_POLICYAREA",
+   "type": "esriFieldTypeString",
+   "alias": "Policy Area",
+   "length": 120,
+   "domain": {
+    "type": "codedValue",
+    "name": "FL_POLICYAREA2",
+    "description": "Policy Area description - updated",
+    "codedValues": [
+     {
+      "name": "Brantford SPA",
+      "code": "Brantford SPA"
+     },
+     {
+      "name": "Cambridge SPA",
+      "code": "Cambridge SPA"
+     },
+     {
+      "name": "Drayton SPA",
+      "code": "Drayton SPA"
+     },
+     {
+      "name": "Dunnville SPA",
+      "code": "Dunnville SPA"
+     },
+     {
+      "name": "Guelph SPA",
+      "code": "Guelph SPA"
+     },
+     {
+      "name": "New Hamburg SPA",
+      "code": "New Hamburg SPA"
+     },
+     {
+      "name": "Paris SPA",
+      "code": "Paris SPA"
+     },
+     {
+      "name": "Waterloo SPA",
+      "code": "Waterloo SPA"
+     },
+     {
+      "name": "Alder Creek - New Dundee",
+      "code": "Alder Creek - New Dundee"
+     },
+     {
+      "name": "Cedar Creek - Ayr",
+      "code": "Cedar Creek - Ayr"
+     },
+     {
+      "name": "Clair Creek",
+      "code": "Clair Creek"
+     },
+     {
+      "name": "Colonial Creek - Waterloo",
+      "code": "Colonial Creek - Waterloo"
+     },
+     {
+      "name": "Conestogo River - St. Jacobs",
+      "code": "Conestogo River - St. Jacobs"
+     },
+     {
+      "name": "Eramosa River - Rockwood",
+      "code": "Eramosa River - Rockwood"
+     },
+     {
+      "name": "Firella Creek - Wellesley",
+      "code": "Firella Creek - Wellesley"
+     },
+     {
+      "name": "Four Mile Creek - Damascus",
+      "code": "Four Mile Creek - Damascus"
+     },
+     {
+      "name": "Grand River - Caledonia",
+      "code": "Grand River - Caledonia"
+     },
+     {
+      "name": "Grand River - Cayuga",
+      "code": "Grand River - Cayuga"
+     },
+     {
+      "name": "Grand River - Fergus",
+      "code": "Grand River - Fergus"
+     },
+     {
+      "name": "Grand River - Grand Valley",
+      "code": "Grand River - Grand Valley"
+     },
+     {
+      "name": "Grand River - Kitchener - Bridgeport East",
+      "code": "Grand River - Kitchener - Bridgeport East"
+     },
+     {
+      "name": "Grand River - Kitchener - Victoria Street North",
+      "code": "Grand River - Kitchener - Victoria Street North"
+     },
+     {
+      "name": "Grand River - Paris",
+      "code": "Grand River - Paris"
+     },
+     {
+      "name": "Groff Mill Creek",
+      "code": "Groff Mill Creek"
+     },
+     {
+      "name": "Hadati Creek",
+      "code": "Hadati Creek"
+     },
+     {
+      "name": "Henry Sturm Greenway",
+      "code": "Henry Sturm Greenway"
+     },
+     {
+      "name": "Laurel Creek - University of Waterloo",
+      "code": "Laurel Creek - University of Waterloo"
+     },
+     {
+      "name": "Laurel Creek -Bridgeport",
+      "code": "Laurel Creek -Bridgeport"
+     },
+     {
+      "name": "Maple Creek - Dunnville",
+      "code": "Maple Creek - Dunnville"
+     },
+     {
+      "name": "Maple Hill Creek",
+      "code": "Maple Hill Creek"
+     },
+     {
+      "name": "Mill Creek - Galt",
+      "code": "Mill Creek - Galt"
+     },
+     {
+      "name": "Moffat Creek  - Galt - lower",
+      "code": "Moffat Creek  - Galt - lower"
+     },
+     {
+      "name": "Nith River - Ayr",
+      "code": "Nith River - Ayr"
+     },
+     {
+      "name": "Nith River - New Hamburg",
+      "code": "Nith River - New Hamburg"
+     },
+     {
+      "name": "Schneider Creek - Upper Doon",
+      "code": "Schneider Creek - Upper Doon"
+     },
+     {
+      "name": "Schneider Creek - West Ave to Rockway GC",
+      "code": "Schneider Creek - West Ave to Rockway GC"
+     },
+     {
+      "name": "Shoemaker Creek",
+      "code": "Shoemaker Creek"
+     },
+     {
+      "name": "Speed River - Guelph",
+      "code": "Speed River - Guelph"
+     },
+     {
+      "name": "Speed River - Hespeler",
+      "code": "Speed River - Hespeler"
+     },
+     {
+      "name": "Speed River - Preston",
+      "code": "Speed River - Preston"
+     },
+     {
+      "name": "Weigel Drain - Elmira",
+      "code": "Weigel Drain - Elmira"
+     },
+     {
+      "name": "Westmount Creek",
+      "code": "Westmount Creek"
+     },
+     {
+      "name": "Baden Creek",
+      "code": "Baden Creek"
+     },
+     {
+      "name": "Canagagigue Creek - Elmira",
+      "code": "Canagagigue Creek - Elmira"
+     },
+     {
+      "name": "Drain 1 - Elmira",
+      "code": "Drain 1 - Elmira"
+     },
+     {
+      "name": "Forwell Creek - Waterloo",
+      "code": "Forwell Creek - Waterloo"
+     },
+     {
+      "name": "Kolb Creek",
+      "code": "Kolb Creek"
+     },
+     {
+      "name": "Grand River - Elora",
+      "code": "Grand River - Elora"
+     },
+     {
+      "name": "Schneider Creek - Lower Main Branch",
+      "code": "Schneider Creek - Lower Main Branch"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "SHAPE",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "GR_FEATURE",
+   "type": "esriFieldTypeString",
+   "alias": "GR_FEATURE",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "SHAPE.STArea()",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.STArea()",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.STLength()",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.STLength()",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "SHAPE",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "I164FL_TYPE",
+   "fields": "FL_TYPE",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "S101_idx",
+   "fields": "SHAPE",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": false,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON",
+ "isDataVersioned": true,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsHavingClause": true,
+  "supportsCountDistinct": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsPagination": true,
+  "supportsTrueCurve": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null,
+ "supportsCoordinatesQuantization": true
+}
