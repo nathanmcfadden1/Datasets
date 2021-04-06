@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID_1": 1.000000, "ADDRESS": "21 IMPERIAL RD S", "STATION": 4.000000 }, "geometry": { "type": "Point", "coordinates": [ -80.291630, 43.524749 ] } }
+,
+{ "type": "Feature", "properties": { "OBJECTID_1": 2.000000, "ADDRESS": "380 ELIZABETH ST", "STATION": 5.000000 }, "geometry": { "type": "Point", "coordinates": [ -80.228468, 43.555864 ] } }
+,
+{ "type": "Feature", "properties": { "OBJECTID_1": 3.000000, "ADDRESS": "50 WYNDHAM ST S", "STATION": 1.000000 }, "geometry": { "type": "Point", "coordinates": [ -80.243608, 43.543507 ] } }
+,
+{ "type": "Feature", "properties": { "OBJECTID_1": 4.000000, "ADDRESS": "115 STONE RD W", "STATION": 3.000000 }, "geometry": { "type": "Point", "coordinates": [ -80.229427, 43.523735 ] } }
+,
+{ "type": "Feature", "properties": { "OBJECTID_1": 5.000000, "ADDRESS": "70 SPEEDVALE AVE E", "STATION": 2.000000 }, "geometry": { "type": "Point", "coordinates": [ -80.266050, 43.560434 ] } }
+,
+{ "type": "Feature", "properties": { "OBJECTID_1": 6.000000, "ADDRESS": "160 CLAIR RD W", "STATION": 6.000000 }, "geometry": { "type": "Point", "coordinates": [ -80.193310, 43.496098 ] } }
+
+]
+}
